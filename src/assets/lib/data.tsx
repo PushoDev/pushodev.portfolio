@@ -39,19 +39,19 @@ import Privacy from "../../components/Privacy";
 
 export const headerIntroData = {
   title: {
-    de: "Hi, ich bin Alpay",
-    en: "Hi, I'm Alpay",
+    de: "Hola, soy Pusho.dev",
+    en: "Hi, I'm Pusho.dev",
   },
-  subtitle: "Fullstack Developer ",
+  subtitle: "FullSctack Dev",
   description: {
-    de: "Ich bin Alpay, ein Fullstack-Entwickler mit dem Ziel, meine Karriere voranzutreiben und an inspirierenden Projekten teilzunehmen. Hier präsentiere ich meine Arbeiten und meine Leidenschaft für die Webentwicklung. Lassen Sie uns gemeinsam digitale Lösungen gestalten und die Zukunft formen!",
-    en: "I'm Alpay, a fullstack developer with the goal of advancing my career and participating in inspiring projects. Here I present my work and my passion for web development. Let's shape digital solutions together and shape the future!",
+    de: "Mi nombre es Luis Alberto Guisado. Soy ✨ Desarrollador de Software ✨ . Un apasionado de la Tecnología, y a encontrar soluciones inmediatas a problemas informáticos. Un desarrollador completo con el objetivo de avanzar en mi carrera y participar en proyectos inspiradores. Aquí presento mi trabajo y mi pasión por el desarrollo web. ¡Damos forma a soluciones digitales juntas y damos forma al futuro!",
+    en: "I'm Luis A. Guisado, I am ✨ software developer ✨. A passionate about technology, and find immediate solutions to computer problems. A fullstack developer with the goal of advancing my career and participating in inspiring projects. Here I present my work and my passion for web development. Let's shape digital solutions together and shape the future!",
   },
   buttons: [
     {
       name: "Contact",
       label: {
-        de: "Kontaktiere mich",
+        de: "Contacte conmigo",
         en: "Contact me",
       },
       icon: FiMail,
@@ -60,7 +60,7 @@ export const headerIntroData = {
     {
       name: "Projects",
       label: {
-        de: "Meine Projekte",
+        de: "Mis Proyectos",
         en: "My Projects",
       },
       icon: FiGithub,
@@ -297,11 +297,11 @@ export const skillsDataCMS = [
 ] as const;
 
 export const navLinks = [
-  { de: "Home", en: "Home", hash: "#home", icon: GoHome },
-  { de: "Skills", en: "Skills", hash: "#skills", icon: GoStack },
-  { de: "Projekte", en: "Projects", hash: "#projects", icon: GoProject },
-  { de: "Über mich", en: "About me", hash: "#about-me", icon: GoPerson },
-  { de: "Kontakt", en: "Contact", hash: "#contact", icon: GoMail },
+  { de: "Inicio", en: "Home", hash: "#home", icon: GoHome },
+  { de: "Habilidades", en: "Skills", hash: "#skills", icon: GoStack },
+  { de: "Proyectos", en: "Projects", hash: "#projects", icon: GoProject },
+  { de: "Acerca de mi", en: "About me", hash: "#about-me", icon: GoPerson },
+  { de: "Contacto", en: "Contact", hash: "#contact", icon: GoMail },
 ] as const;
 
 export const FooterLinks = [
