@@ -6,6 +6,7 @@ import { useTheme } from "../context/theme-context";
 import { ScrollProgress } from "../components/ScrollProgress";
 import Divider from "../components/Divider";
 import ProjectSlider from "../components/ProjectSlider";
+import Hero from "../components/Hero";
 
 const LazyBannerQuote = lazy(() => import("../components/BannerQuote"));
 const LazySiteBarRight = lazy(() => import("../components/SideBarRight"));
@@ -21,6 +22,9 @@ const Home: React.FC = () => {
 
   return (
     <>
+      {/* Bienvenida */}
+      <Hero />
+      {/* Portfolio */}
       <Layout>
         <ThemeSwitch />
         <header className="h-screen">
@@ -73,7 +77,7 @@ const Home: React.FC = () => {
               dividerStyle="solid"
             />
             <ProjectSlider />
-            <div className="relative -mb-24 pb-32 -mt-10">
+            <div className="relative pb-32 -mt-10 -mb-24">
               <LazyRadialGradient
                 opacity={theme === "light" ? "opacity-30" : "opacity-30"}
                 scale="scale-y-100"
