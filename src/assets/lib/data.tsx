@@ -39,7 +39,7 @@ import Privacy from "../../components/Privacy";
 
 export const headerIntroData = {
   title: {
-    de: "Hola, soy Pusho.dev",
+    de: "Hola, soy Pucho",
     en: "Hi, I'm Pusho.dev",
   },
   subtitle: "FullSctack Dev",
@@ -149,7 +149,7 @@ export const projectsData = [
       { name: "MongoDB", icon: mongodbicon },
       { name: "Express", icon: expressiconwhite },
       { name: "Node.js", icon: nodejsicon },
-      { name: "Figma", icon: figmaicon },
+      { name: "Laravel", icon: figmaicon },
       { name: "Render", icon: rendericon },
       { name: "Trello", icon: trelloicon },
     ],
@@ -162,14 +162,14 @@ export const projectsData = [
       main: "main-btn",
       second: "secondary-btn",
       icon: "white",
-      projectcolor: "#E3964A",
+      projectcolor: "#31c471",
     },
   },
 ] as const;
 
 export const liveTickerData = {
   content: {
-    de: "Weitere Projekte auf Github",
+    de: "Más Proyecto en Github",
     en: "More Projects on Github",
   },
 } as const;
@@ -310,8 +310,8 @@ export const FooterLinks = [
 ] as const;
 
 export const sideBarRightMail = {
-  link: "mailto:myemail@com",
-  text: "myemail@com",
+  link: "mailto:pushodevs@gmail.com",
+  text: "@pushodev.mail",
 } as const;
 
 export const sideBarLeftSocials = [
@@ -334,22 +334,28 @@ export const sideBarLeftSocials = [
 
 export const quotesData = [
   {
-    de: '"Es ist überhaupt nicht wichtig, es beim ersten Mal richtig zu machen. Es ist entscheidend, es beim letzten Mal richtig zu machen."',
+    de: '"No es importante hacerlo bien la primera vez. Es de vital importancia hacerlo bien la última vez."',
     en: `"It's not at all important to get it right the first time. It's vitally important to get it right the last time."`,
     author: "Andrew Hunt",
   },
   {
-    de: '"Das Web ist wie eine Leinwand und der Code ist die Farbe. Erschaffe dein Meisterwerk."',
-    en: `"The web is like a canvas, and code is the paint. Create your masterpiece."`,
+    de: '"La web es como un lienzo, y el código es la pintura. Crea tu obra maestra. 😎"',
+    en: `"The web is like a canvas, and code is the paint. Create your masterpiece. 😎"`,
   },
 ] as const;
 
 export const aboutMeData = {
-  title: "Über mich",
+  title: "Acerca de mi",
   title_EN: "About me",
-  description: "Ein paar Codeschnippsel über mich",
+  description: "Algunos fragmentos de código sobre mí",
   description_EN: "A few code snippets about me",
   paragraphs_DE: [
+    {
+      title: "Die Schaltkreise meines Herzens",
+      description:
+        "Wenn ich nicht in der digitalen Welt unterwegs bin, durchstreife ich die faszinierende Welt der Technik und Hardware. Schaltkreise und Lötstellen sind für mich wie Puzzleteile eines aufregenden Abenteuers.",
+      icon: hardwareicon,
+    },
     {
       title: "Die Schaltkreise meines Herzens",
       description:
@@ -393,11 +399,11 @@ export const aboutMeData = {
 
 export const contactData = {
   title: {
-    de: "Kontakt",
+    de: "Contacto",
     en: "Contact",
   },
   description: {
-    de: "Schreib mir eine Nachricht und ich melde mich bei dir.",
+    de: "Escríbeme un mensaje y te responderé.",
     en: "Write me a message and I will get back to you.",
   },
   inputfields: [
@@ -500,7 +506,7 @@ export const toastMessages = {
 
 export const buttonLabels = {
   language: {
-    de: "DE",
+    de: "ES",
     en: "EN",
   },
 } as const;
