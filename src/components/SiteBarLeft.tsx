@@ -15,7 +15,7 @@ const SiteBarLeft: React.FC = () => {
       className="absolute flex items-center flex-col justify-center top-0 left-0 ml-8 max-lg:h-[10%] max-lg:ml-4"
       id="home"
     >
-      <div className="flex items-center justify-center flex-col">
+      <div className="flex flex-col items-center justify-center">
         <div className="w-[0.25rem] h-[40vh] bg-[--lightblue]"></div>
       </div>
       <div className="flex flex-col gap-4 mt-4">
@@ -33,7 +33,7 @@ const SiteBarLeft: React.FC = () => {
             }
           >
             {typeof social.icon === "function" ? (
-              <social.icon className={`stroke-orange`} />
+              <social.icon className={`stroke-green-600`} />
             ) : (
               <img
                 src={social.icon}

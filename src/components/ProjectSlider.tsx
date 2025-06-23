@@ -41,7 +41,7 @@ const ProjectSlider: React.FC = () => {
         ref={ref}
       >
         <ToastContainer
-          className="w-max text-3xl block p-3 "
+          className="block p-3 text-3xl w-max "
           position="bottom-center"
           autoClose={5000}
           hideProgressBar={false}
@@ -73,11 +73,11 @@ const ProjectSlider: React.FC = () => {
             >
               <p className="text-[--white] mt-16 mb-6">
                 <span className="text-[--orange]">&lt;</span>
-                {language === "DE" ? "Projekte" : "Projects"}
+                {language === "DE" ? "Proyectos" : "Projects"}
                 <span className="text-[--orange]">/&gt;</span>
               </p>
               <h2 className="text-[--white] mb-16">
-                {language === "DE" ? "Meine Projekte" : "My Projects"}
+                {language === "DE" ? "Mis Proyectos" : "My Projects"}
               </h2>
             </motion.div>
             <Swiper
@@ -127,7 +127,7 @@ const ProjectSlider: React.FC = () => {
                         )}
                       </div>
                     </div>
-                    <div className="buttons flex gap-10">
+                    <div className="flex gap-10 buttons">
                       <Button
                         label="Live Demo"
                         link={project.deploymenturl}
@@ -168,7 +168,7 @@ const ProjectSlider: React.FC = () => {
                   alt={project.image}
                   className="h-[35vh] w-full object-cover object-top rounded-3xl"
                 />
-                <div className="buttons flex gap-10 max-lg:flex-col">
+                <div className="flex gap-10 buttons max-lg:flex-col">
                   <Button
                     label="Live Demo"
                     link={project.deploymenturl}
@@ -184,7 +184,7 @@ const ProjectSlider: React.FC = () => {
                     iconcolor={project.colors.icon}
                   />
                 </div>
-                <p className="text-white  max-lg:text-4xl">
+                <p className="text-white max-lg:text-4xl">
                   {language === "DE"
                     ? project.description
                     : project.description_EN}

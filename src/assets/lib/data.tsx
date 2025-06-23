@@ -6,7 +6,6 @@ import cssicon from "../../assets/icons/cssicon.svg";
 import javascripticon from "../../assets/icons/javascripticon.svg";
 import typescripticon from "../../assets/icons/typescripticon.svg";
 import reacticon from "../../assets/icons/reacticon.svg";
-import nextjsicon from "../../assets/icons/nextjsicon.svg";
 import nodejsicon from "../../assets/icons/nodejsicon.svg";
 import tailwindcssicon from "../../assets/icons/tailwindicon.svg";
 import mongodbicon from "../../assets/icons/mongoicon.svg";
@@ -30,7 +29,6 @@ import profilepicture from "../img/me2.webp";
 import caricon from "../../assets/icons/car-icon.svg";
 import travelicon from "../../assets/icons/travel-icon.svg";
 import hardwareicon from "../../assets/icons/hardware-icon.svg";
-import nextjsiconwhite from "../../assets/icons/nextjsiconwhite.svg";
 import expressiconwhite from "../../assets/icons/expressiconwhite.svg";
 import { GoHome, GoPerson, GoMail, GoStack, GoProject } from "react-icons/go";
 import { FiGithub, FiLink, FiLinkedin, FiMail } from "react-icons/fi";
@@ -203,34 +201,16 @@ export const skillsDataWeb = [
         color: "#007ACC",
       },
       {
-        title: "React",
-        hash: "#React",
-        icon: reacticon,
-        color: "#61DAFB",
-      },
-      {
-        title: "Next.js",
-        hash: "#Next.js",
-        icon: [nextjsicon, nextjsiconwhite],
-        color: ["#000000", "#FFFFFF"],
-      },
-      {
-        title: "Node.js",
-        hash: "#Node.js",
-        icon: nodejsicon,
-        color: "#339933",
-      },
-      {
         title: "Tailwind",
         hash: "#Tailwind",
         icon: tailwindcssicon,
         color: "#38B2AC",
       },
       {
-        title: "MongoDB",
-        hash: "#MongoDB",
-        icon: mongodbicon,
-        color: "#449C45",
+        title: "React",
+        hash: "#React",
+        icon: reacticon,
+        color: "#61DAFB",
       },
       {
         title: "Vue.js",
@@ -238,6 +218,20 @@ export const skillsDataWeb = [
         icon: vuejsicon,
         color: "#4FC08D",
       },
+      {
+        title: "Node.js",
+        hash: "#Node.js",
+        icon: nodejsicon,
+        color: "#339933",
+      },
+
+      {
+        title: "MongoDB",
+        hash: "#MongoDB",
+        icon: mongodbicon,
+        color: "#449C45",
+      },
+
       {
         title: "Express",
         hash: "#Express",
@@ -256,7 +250,7 @@ export const skillsDataWeb = [
 
 export const skillsDataDesign = [
   {
-    skillsTitle: "Design",
+    skillsTitle: "Diseño",
     skills: [
       { title: "Figma", hash: "#Figma", icon: figmaicon, color: "#F24E1E" },
       {

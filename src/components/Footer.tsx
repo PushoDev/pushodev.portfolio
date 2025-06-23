@@ -29,7 +29,7 @@ const Footer: React.FC = () => {
             trigger={
               <Link
                 to="#"
-                className="text-white text-2xl font-bold hover:text-orange"
+                className="text-2xl font-bold text-white hover:text-green-500"
               >
                 {language === "DE" ? link.de : link.en}
               </Link>
@@ -46,7 +46,7 @@ const Footer: React.FC = () => {
                     }`}
                   >
                     <button
-                      className="fixed top-0 right-0 bg-orange p-4 z-10 rounded-2xl m-4 hover:bg-lightblue transition-all duration-500 dark-shadow text-white"
+                      className="fixed top-0 right-0 z-10 p-4 m-4 text-white transition-all duration-500 bg-green-500 rounded-2xl hover:bg-lightblue dark-shadow"
                       onClick={() => {
                         close();
                       }}
@@ -61,7 +61,7 @@ const Footer: React.FC = () => {
           </Popup>
         ))}
       </div>
-      <div className="socials flex gap-10 ">
+      <div className="flex gap-10 socials ">
         {sideBarLeftSocials.map((social: SocialLink, index: number) => (
           <Link
             to={social.link}
@@ -76,7 +76,7 @@ const Footer: React.FC = () => {
             }
           >
             {typeof social.icon === "function" ? (
-              <social.icon className={`stroke-orange`} />
+              <social.icon className={`stroke-green-600`} />
             ) : (
               <img
                 src={social.icon}
