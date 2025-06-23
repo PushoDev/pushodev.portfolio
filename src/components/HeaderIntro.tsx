@@ -104,7 +104,7 @@ const HeaderIntro: React.FC = () => {
               }
             }}
             isExternal={button.isExternal} // Nuevo prop
-            target={button.target} // Nuevo prop
+            // target={button.target} // Nuevo prop
             className="transition-transform cursor-pointer hover:scale-105"
           />
         ))}

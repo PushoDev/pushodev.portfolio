@@ -34,6 +34,7 @@ import { GoHome, GoPerson, GoMail, GoStack, GoProject } from "react-icons/go";
 import { FiGithub, FiLink, FiLinkedin, FiMail } from "react-icons/fi";
 import Imprint from "../../components/Imprint";
 import Privacy from "../../components/Privacy";
+import { BsFiletypePdf } from "react-icons/bs";
 
 // eslint-disable-next-line react-refresh/only-export-components
 export const headerIntroData = {
@@ -53,10 +54,10 @@ export const headerIntroData = {
     {
       name: "Contact",
       label: {
-        de: "Contacte conmigo",
-        en: "Contact me",
+        de: "Descargar CVitae",
+        en: "CViate Dowload",
       },
-      icon: FiMail,
+      icon: BsFiletypePdf,
       color: "main-btn",
       link: "#contact", // Enlace interno
       isExternal: false, // Nuevo campo
@@ -69,8 +70,8 @@ export const headerIntroData = {
       },
       icon: FiGithub,
       color: "secondary-btn",
-      link: "#projects", // Enlace interno
-      isExternal: false, // Nuevo campo
+      link: "https://github.com/PushoDev", // Enlace interno
+      isExternal: true, // Nuevo campo
     },
   ],
   profilepicture: profilepicture,
