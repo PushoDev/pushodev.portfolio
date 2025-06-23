@@ -54,8 +54,8 @@ export const headerIntroData = {
     {
       name: "Contact",
       label: {
-        de: "Descargar CVitae",
-        en: "CViate Dowload",
+        de: "Contacto Conmigo",
+        en: "Contact Us",
       },
       icon: BsFiletypePdf,
       color: "main-btn",
@@ -70,8 +70,8 @@ export const headerIntroData = {
       },
       icon: FiGithub,
       color: "secondary-btn",
-      link: "https://github.com/PushoDev", // Enlace interno
-      isExternal: true, // Nuevo campo
+      link: "#projects", // Enlace interno
+      isExternal: false, // Nuevo campo
     },
   ],
   profilepicture: profilepicture,
