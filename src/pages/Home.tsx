@@ -21,8 +21,6 @@ const Home: React.FC = () => {
 
   return (
     <>
-      {/* Bienvenida */}
-      {/* <Hero /> */}
       {/* Portfolio */}
       <Layout>
         <ThemeSwitch />

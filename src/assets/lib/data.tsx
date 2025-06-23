@@ -35,12 +35,16 @@ import { FiGithub, FiLink, FiLinkedin, FiMail } from "react-icons/fi";
 import Imprint from "../../components/Imprint";
 import Privacy from "../../components/Privacy";
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const headerIntroData = {
   title: {
     de: "Hola, soy Pucho",
     en: "Hi, I'm Pusho.dev",
   },
-  subtitle: "FullSctack Dev",
+  subtitle: {
+    de: "Desarrollador FullStack",
+    en: "FullStack Developer",
+  },
   description: {
     de: "Mi nombre es Luis Alberto Guisado. Soy ✨ Desarrollador de Software ✨ . Un apasionado de la Tecnología, y a encontrar soluciones inmediatas a problemas informáticos. Un desarrollador completo con el objetivo de avanzar en mi carrera y participar en proyectos inspiradores. Aquí presento mi trabajo y mi pasión por el desarrollo web. ¡Damos forma a soluciones digitales juntas y damos forma al futuro!",
     en: "I'm Luis A. Guisado, I am ✨ software developer ✨. A passionate about technology, and find immediate solutions to computer problems. A fullstack developer with the goal of advancing my career and participating in inspiring projects. Here I present my work and my passion for web development. Let's shape digital solutions together and shape the future!",
@@ -54,6 +58,8 @@ export const headerIntroData = {
       },
       icon: FiMail,
       color: "main-btn",
+      link: "#contact", // Enlace interno
+      isExternal: false, // Nuevo campo
     },
     {
       name: "Projects",
@@ -63,6 +69,8 @@ export const headerIntroData = {
       },
       icon: FiGithub,
       color: "secondary-btn",
+      link: "#projects", // Enlace interno
+      isExternal: false, // Nuevo campo
     },
   ],
   profilepicture: profilepicture,

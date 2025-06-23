@@ -13,6 +13,8 @@ interface ButtonProps {
   buttonhovercolor?: string;
   type?: "button" | "submit" | "reset";
   elementType?: "input" | "button";
+  target?: "_blank" | "_self" | "_parent" | "_top"; // Nuevo prop
+  isExternal?: boolean; // Nuevo prop para identificar enlaces externos
 }
 
 const Button: React.FC<ButtonProps> = ({
@@ -25,6 +27,8 @@ const Button: React.FC<ButtonProps> = ({
   buttonhovercolor,
   type,
   elementType,
+  target = "_self",
+  isExternal = false, // Valor por defecto
 }) => {
   const commonProps = {
     onClick,
@@ -36,22 +40,47 @@ const Button: React.FC<ButtonProps> = ({
   if (elementType === "input") {
     return <input {...commonProps} value={value}></input>;
   } else {
-    return (
-      <Link to={link || ""} className="no-underline">
-        <button {...commonProps}>
-          {IconSVGComponent ? (
-            <IconSVGComponent className={"w-max h-10"} />
-          ) : (
-            <img
-              src={buttoncolor || ""}
-              alt={`${label}-icon`}
-              className={`bg-[${buttoncolor || ""}] w-16 `}
-            />
-          )}
-          {label}
-        </button>
-      </Link>
-    );
+    // Manejo de diferentes tipos de enlaces
+    if (isExternal) {
+      return (
+        <a
+          href={link}
+          target={target}
+          rel={target === "_blank" ? "noopener noreferrer" : ""}
+          className="no-underline"
+        >
+          <button {...commonProps}>
+            {IconSVGComponent ? (
+              <IconSVGComponent className={"w-max h-10"} />
+            ) : (
+              <img
+                src={buttoncolor || ""}
+                alt={`${label}-icon`}
+                className={`bg-[${buttoncolor || ""}] w-16 `}
+              />
+            )}
+            {label}
+          </button>
+        </a>
+      );
+    } else {
+      return (
+        <Link to={link || ""} className="no-underline">
+          <button {...commonProps}>
+            {IconSVGComponent ? (
+              <IconSVGComponent className={"w-max h-10"} />
+            ) : (
+              <img
+                src={buttoncolor || ""}
+                alt={`${label}-icon`}
+                className={`bg-[${buttoncolor || ""}] w-16 `}
+              />
+            )}
+            {label}
+          </button>
+        </Link>
+      );
+    }
   }
 };
 
